@@ -57,6 +57,11 @@ h2 {
   text-decoration: none;
 }
 
+.button:hover {
+  color: #263138;
+  font-weight: 500;
+}
+
 .button-transparent {
   background-color: transparent;
   color: #ff725e;
