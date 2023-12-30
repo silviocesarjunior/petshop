@@ -29,6 +29,23 @@ header a:hover {
   color: #263138;
 }
 
+header img {
+  animation: flutuacao 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flutuacao {
+  0%{
+    transform: translatex(5px) rotate(0deg);
+  }
+  50%{
+    transform: translatex(15px) rotate(-15deg);
+  }
+  100%{
+    transform: translatex(5px) rotate(0deg);
+  }
+}
+
 #inicio {
   display: flex;
   align-items: center;
@@ -194,7 +211,7 @@ footer p a {
   color: #ff9a6c;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 480px) {
   header {
     background-color: #ff9a6c;
     display: flex;
@@ -265,7 +282,7 @@ footer p a {
     padding: 64px 80px;
   }
 
-  #copyright{
+  #copyright {
     display: flex;
     align-items: center;
     flex-direction: column;
